@@ -55,7 +55,7 @@ def train_and_evaluate(config_path):
     print("  RMSE: %s" % rmse)
     print("  MAE: %s" % mae)
     print("  R2: %s" % r2)
-
+###########################################################
     scores_file = config["reports"]["scores"]
     params_file = config["reports"]["params"]
 
@@ -78,7 +78,7 @@ def train_and_evaluate(config_path):
 
     os.makedirs(model_dir,exist_ok=True)
     model_path = os.path.join(model_dir, "model.joblib")
-
+###########################################################
 if __name__=="__main__":
     args = argparse.ArgumentParser()
     args.add_argument("--config",default="params.yaml")
