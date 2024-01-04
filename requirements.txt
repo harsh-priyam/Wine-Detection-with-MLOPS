@@ -8,3 +8,9 @@ tox
 flake8
 flask
 gunicorn
+notebook
+python-box==6.0.2
+pyYAML
+joblib
+Flask-Cors
+-e .
